@@ -1,0 +1,131 @@
+.modal {
+    font-size: 12px;
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    color: black;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+  .popup-content {
+    margin: auto;
+    background: #353a44;
+    color: white;
+    border-radius: 6px;
+    width: 50%;
+    padding: 18px;
+  }
+  .popup-arrow {
+    color: rgb(255, 255, 255);
+  }
+  [role='tooltip'].popup-content {
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+  }
+  
+  .popup-overlay {
+    background: #000000cf;
+  }
+  [data-popup='tooltip'].popup-overlay {
+    background: transparent;
+  }
+
+  .popup-title {
+    background: #2d3038;
+    padding: 5px 9px;
+    border-left: solid 6px #e1e1e1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  .post-title {
+    cursor: pointer;
+  }
+
+  .post-title:hover {
+    text-decoration: underline;
+  }
+
+  .popup-body {
+    font-size: 1rem;
+    display: inline;
+  }
+
+  .comment-sentiment {
+    font-size: 1rem;
+    margin-top: 9px;
+  }
+
+  .popup-body, .comment-sentiment {
+    color: #c9c5c5;
+  }
+
+  .comment-score-number {
+    padding: 2px 6px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+  }
+
+  .pos {
+    background-color: #00c30042;
+    color: #3aeb3a;
+  }
+
+  .neg {
+    background-color: rgb(102 1 1 / 54%);
+    color: #f13c3c;
+  }
+
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+  @keyframes anvil {
+    0% {
+      transform: scale(1) translateY(0px);
+      opacity: 0;
+      box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    1% {
+      transform: scale(0.96) translateY(10px);
+      opacity: 0;
+      box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+      box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+  }
+  .popup-content {
+    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+  }
